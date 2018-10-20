@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script src="motionsdata.js"></script>
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:auto; 
+    margin-right:auto;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
+<body>
+    <!--<h1>Motionsdata</h1>-->
+
+
+    <script>
+        
+        var myObj = JSON.parse(myJSON);
+        var t = '';
+        t += '<table>';
+        for (i = 0; i < myObj.length; i++) {
+            
+            
+            t += '<tr>';
+            t += '<td>'+ myObj[i].first_data + '</td>' + '<td>' + 
+                 myObj[i].last_data + '</td>';
+            t +='</tr>';
+
+        }
+        console.log(t);
+        t += '</table>';
+        document.body.innerHTML += t;
+    </script>
+</body>
+</html>    
