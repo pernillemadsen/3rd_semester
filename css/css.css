@@ -1,0 +1,33 @@
+/*Om Project*/
+
+#titel_aboutProject {
+    text-align: left;
+    margin: 5% 0 3% 10%;
+}
+
+.column_aboutProject {
+    float: left;
+    width: 40%;
+    padding: 0 0 0 10%;
+}
+
+.column2_aboutProject {
+    float: right;
+    width: 40%;
+}
+
+#billede1_aboutProject {
+    margin-bottom: 3%;
+}
+
+
+/*SPIL SIDE */
+
+#titel_unitySpil {
+    text-align: center;
+    margin: 5% 0 3% 0;
+}
+
+#UnityEmbed {
+    margin: 0 25% 0 25%;
+}
