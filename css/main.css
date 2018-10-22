@@ -1134,7 +1134,7 @@ td, th {
 }
 
 .banner-area {
-  //background: url(../img/banner1.jpg) no-repeat center center/cover;
+  /*background: url(../img/banner1.jpg) no-repeat center center/cover;*/
 }
 
 .banner-area .overlay-bg {
@@ -1320,9 +1320,9 @@ td, th {
 }
 
 .single-member .thumb .overlay-member {
-  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
-  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
-  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  /*background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);*/
+  /*background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);*/
+  /*background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);*/
   text-align: center;
   padding: 30px;
   opacity: 0;
@@ -1668,4 +1668,8 @@ footer .footer-nav li a:hover {
 
 .footer-bottom .footer-text a:hover {
   color: #00ff8c;
+}
+
+.text-black {
+    color: black;
 }
