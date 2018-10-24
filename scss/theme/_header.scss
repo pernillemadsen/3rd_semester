@@ -40,7 +40,7 @@
 			position: absolute;
 			top: 40px;
 			right: 0;
-			background: #4a4fad;
+			//background: #4a4fad;
 			padding: 30px 20px;
 			a {
 				margin: 5px 20px !important;
@@ -61,9 +61,11 @@
 }
 .is-sticky {
 	.sticky-header {
+        /*
 		background: -moz-linear-gradient(left, rgba(60,64,143,.95) 0%, rgba(91,97,207,.95) 100%);
 		background: -webkit-linear-gradient(left, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
 		background: linear-gradient(to right, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
+        */
 	}
 }
 .search {
@@ -94,7 +96,7 @@
 	right: -2px;
 	input {
 		line-height: 60px;
-		background: #4a4fad;
+		//background: #4a4fad;
 		width: 600px;
 		border: none;
 		color: $white;
