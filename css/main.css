@@ -1187,12 +1187,13 @@ th {
 }
 
 .signle-service {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .signle-service figcaption {
     background: #fff;
-    padding: 40px 20px;
+    padding: 40px -20px 20px -20px;
+    width: 100%;
 }
 
 .signle-service figcaption h5 {
@@ -1421,6 +1422,8 @@ th {
 
 .studio-area {
     position: relative;
+    left: 
+    bottom: -200px;
 }
 
 .studio-area .container {
@@ -1435,13 +1438,13 @@ th {
     top: 0;
     width: 50%;
     height: 100%;
-    background: #404598;
+    /* background: #404598; */
     z-index: 2;
 }
 
 @media (max-width: 991px) {
     .studio-area:before {
-        background: rgba(64, 69, 152, 0.95);
+        /* background: rgba(64, 69, 152, 0.95); */
         width: 100%;
     }
 }
@@ -1453,7 +1456,7 @@ th {
     top: 0;
     width: 50%;
     height: 100%;
-    background: url(../img/studio-bg.jpg) no-repeat center center/cover;
+    background: url(../img/Thumbs_up.jpg) no-repeat center center/cover;
     z-index: 1;
 }
 
@@ -1722,54 +1725,71 @@ footer .footer-nav li a:hover {
 /* CUSTOM CSS */
 
 .index-box {
-
+    /* Div outline */
     position: absolute;
     display: table-row-group;
+    /* Div outline 
     border-style: dashed;
     border-color: black;
     border-width: thin;
+    */
+    margin-top: -25%;
 }
 
 @media (max-width: 767px) {
-    .index-box-bottom {
-        display: table-row-group;
-    }
-}
-
-.index-img.video iframe{
-    position: absolute;
-    border-style: dashed;
-    border-color: black;
-    border-width: thin;
-    display: table-row-group;
-    width: 100%;
-}
-
-@media (max-width: 767px) {
-    .index-img {
-        position: relative;
-        border-style: dashed;
-        border-color: black;
-        border-width: thin;
-        width: 100%;
-    }
-}
-
-.video iframe {
-
-}
-
-@media (max-width: 767px) {
-    .video iframe {
+    .index-box {
         display: none;
     }
 }
 
-/* Lazy fix */
+.index-box-bottom {
+    /* Div outline */
+    position: absolute;
+    display: table-row-group;
+    /* Div outline 
+    border-style: dashed;
+    border-color: black;
+    border-width: thin;
+    */
+    margin-top: -15%;
+}
 
-@media (min-width: 767px) {
-
-    #egg {
-        position: relative;
+@media (max-width: 767px) {
+    .index-box-bottom {
+        display: none;
     }
 }
+
+#index-title {
+    width: 100%;
+    max-width: 300px;
+    /* Original width of the logo image */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#index-h2 {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 767px) {
+    #index-title {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .video {
+        display: none;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+.col-md-4 {
+    display: inline-flex;
+}
+
+

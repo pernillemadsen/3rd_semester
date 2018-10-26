@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <!-- <link rel="stylesheet" type="text/css" href="forside.css"> -->
 
@@ -56,30 +57,31 @@
                                 <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
                             </form>
                         </div>
-                        <!-- SOCIAL MEDIER DEACTIVATED UNTIL FURTHER NOTICE
-                        <div class="header-social d-flex align-items-center">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                        -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <section class="section-full">
+    <!-- MAIN CONTENT -->
+    <section class="section-half">
+        <!-- LAZY FIX HAVING TOO MUCH TROUBLE WITH THE RESPONSIVE DESIGN SO I DIASBLED IT FOR NOW -->
+        <div id="index-title" class="text-center">
+            <h2 id="index-h2">Gå på computeren for at se hjemmesiden i fuld version.</h2>
+        </div>
+        <!-- CONTAINER FOR THE MAIN CONTENT, ADJUST THIS TO ADJUST EVERYTHING -->
         <div class="container">
+            <!-- ROW-->
             <div class="row fullscreen">
-                <div class="container justify-content-center d-flex">
+                <!-- CONTAINER UPPER -->
+                <div class="container d-flex justify-content-between align-items-center">
+                    <!-- COLUMN UPPER LEFT -->
                     <div class="col-lg-6">
                         <div class="index-box">
-                            <h2 class="h1 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
-                            <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på.</p>
+                            <h2 class="h1 text-uppercase mb-20 text-center">Dit Virtuelle Kæledyr</h2>
+                            <p class="mb-30 text-center">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på.</p>
                         </div>
-
                     </div>
+                    <!-- COLUMN UPPER RIGHT -->
                     <div class="col-lg-6">
                         <div class="index-box video">
                             <iframe width="510" height="250" src="https://www.youtube.con/embed/XQu8TTBmGhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -87,15 +89,43 @@
                     </div>
 
                 </div>
+                <!-- ROW LOWER -->
                 <div class="container justify-content-center d-flex">
+                    <!-- COLUMN LOWER LEFT -->
                     <div class="col-lg-6">
-                        <div class="index-box">
-                            <h2 class="h1 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
-                            <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på.</p>
+                        <div class="index-box-bottom">
+                            <h2 class="h1 text-uppercase mb-20 text-center">Æg</h2>
+                            <p class="mb-30 text-center">Vælg et æg, scan derefter dit æg her på siden via din mobil. Hurra! Du har nu dit helt eget kæledyr.</p>
+
+                            <div class="col-md-4">
+                                <figure class="signle-service">
+                                    <img src="img/egg.png" class="img-fluid" alt="">
+                                    <figcaption class="text-center">
+                                        <h5 class="text-uppercase">Æg 1</h5>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure class="signle-service">
+                                    <img src="img/egg.png" class="img-fluid" alt="">
+                                    <figcaption class="text-center">
+                                        <h5 class="text-uppercase">Æg 2</h5>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure class="signle-service">
+                                    <img src="img/egg.png" class="img-fluid" alt="">
+                                    <figcaption class="text-center">
+                                        <h5 class="text-uppercase">Æg 3</h5>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
+                    <!-- COLUMN LOWER RIGHT -->
                     <div class="col-lg-6">
-                        <div class="index-box video">
+                        <div class="index-box-bottom video">
                             <iframe width="510" height="250" src="https://www.youtube.con/embed/XQu8TTBmGhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -103,6 +133,16 @@
             </div>
         </div>
     </section>
+    <!-- FOOTER -->
+    <footer class="section-full">
+        <div class="container">
+            <h1 class="text-white d-flex justify-content-center align-items-center">Dit Virtuelle Kæledyr</h1>
+            <div class="footer-bottom d-flex justify-content-center align-items-center">
+                <p class="footer-text m-0">Copyright &copy; 2018 | All rights reserved to <a href="#"></a> Designed by <span>students of the Southern University of Denmark</span>. For educational purposes</p>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- DEACTIVATED FOR NOW
         <div class="section-title">

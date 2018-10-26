@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <title>Motionsdata</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/bootstrap/css/bootstrap-grid.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/css/util.css">
+    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/css/main.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <div class="table100 ver1 m-b-110">
+                    <div class="table100-head">
+                        <table>
+                            <thead>
+                                <tr class="row100 head">
+                                    <th class="cell100 column1">Dato</th>
+                                    <th class="cell100 column2">Skridt</th>
+
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="table100-body js-pscroll">
+                        <table>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section-full">
+        <div class="container">
+            <h1 class="text-white d-flex justify-content-center align-items-center">Dit Virtuelle Kæledyr</h1>
+            <div class="footer-bottom d-flex justify-content-center align-items-center">
+                <p class="footer-text m-0">Copyright &copy; 2018 | All rights reserved to <a href="#"></a> Designed by <span>students of the Southern University of Denmark</span>. For educational purposes</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--===============================================================================================-->
+    <script src="../3rd_semester/table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../3rd_semester/table-data/vendor/bootstrap/js/popper.js"></script>
+    <script src="../3rd_semester/table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../3rd_semester/table-data/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../3rd_semester/table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+        $('.js-pscroll').each(function() {
+            var ps = new PerfectScrollbar(this);
+
+            $(window).on('resize', function() {
+                ps.update();
+            })
+        });
+
+    </script>
+    <!--===============================================================================================-->
+    <script src="../3rd_semester/table-data/js/main.js"></script>
+
+</body>
+
+</html>
