@@ -23,7 +23,7 @@ body {
     height: 35%;
     width: 48%;
     padding-left: 2%;
-    float: left;
+    float: left; 
     overflow: hidden;
 }
 
