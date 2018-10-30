@@ -1,9 +1,9 @@
-.container{
 
-padding-top: 5%; 
-
-
+.titel_Sundhedsfakta {
+    text-align: center;
+    padding-top: 5%;
 }
+
 .SundhedsFakta1 {
     font-family: Georgia, serif; 
     position: absolute;
@@ -11,6 +11,7 @@ padding-top: 5%;
     border-style: dashed;
     border-color: black;
     border-width: thin;
+    
 
 }
 
@@ -21,6 +22,7 @@ padding-top: 5%;
     border-width: thin;
     display: table-row-group;
     width: 100%;
+    
   
 }
 
