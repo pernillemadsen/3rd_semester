@@ -1,31 +1,19 @@
 var loggedIn = Boolean(false);
 
 $(document).ready(function () {
-<<<<<<< HEAD
-
-    $(".navbar").load("index.html");
-=======
-    
     $(".navbar").load("navbar.html");
->>>>>>> 5e4aa729dab46156382d58a7f43027b33c0abe6b
     $(".content_master").load("forside.html");
 
 });
 
-<<<<<<< HEAD
 function loadHjem() {
-    $(".navbar").load("index.html");
-=======
-function loadHjem(){
     $(".navbar").load("navbar.html");
->>>>>>> 5e4aa729dab46156382d58a7f43027b33c0abe6b
     $(".content_master").load("forside.html");
 
 }
 
 function loadMotionsdata() {
-<<<<<<< HEAD
-    $(".navbar").load("index.html");
+    $(".navbar").load("navbar.html");
     
     if(loggedIn){
         $(".content_master").load("motionsdata.html");
@@ -34,10 +22,6 @@ function loadMotionsdata() {
     else {
         $(".content_master").load("loginSide.html");
     }
-=======
-    $(".navbar").load("navbar.html");
-    $(".content_master").load("motionsdata.html");
->>>>>>> 5e4aa729dab46156382d58a7f43027b33c0abe6b
 }
 
 
