@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 /*--------------------------- Color variations ----------------------*/
 
 /* Medium Layout: 1280px */
@@ -47,12 +50,18 @@
 
 body {
     color: #777777;
-    font-family: "Poppins", sans-serif;
+    background-color: rgba(255, 228, 181, 0.05); 
+    font-family: "Quicksand", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5em;
     position: relative;
     overflow: auto;
+}
+
+/* farv søg tegn ??*/
+.lnr lnr-magnifier{
+    color: #FF7F50;
 }
 
 ol,
@@ -1009,13 +1018,13 @@ th {
 }
 
 .default-header nav .main-menu a:hover {
-    color: #00ff8c;
+    color: #FF7F50;
 }
 
 .default-header nav .mobile-btn {
     display: none;
     font-size: 36px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #FF7F50;
 }
 
 @media (max-width: 767px) {
@@ -1029,7 +1038,7 @@ th {
         position: absolute;
         top: 40px;
         right: 0;
-        background: #4a4fad;
+        background: #AAD8E6;
         padding: 30px 20px;
     }
     .default-header .main-menu a {
@@ -1097,7 +1106,7 @@ th {
 
 .search-field input {
     line-height: 60px;
-    background: black;
+    background: #ADD8E6;
     width: 600px;
     border: none;
     color: white;
@@ -1135,7 +1144,7 @@ th {
 }
 
 .search-field .search-submit span {
-    color: #fff;
+    color: #FF7F50;
 }
 
 .header-social {

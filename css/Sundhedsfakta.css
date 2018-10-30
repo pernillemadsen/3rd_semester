@@ -7,9 +7,9 @@
 .Sundhedsfakta_div {
     max-width: 70%;
     margin: auto;
-    background: white;
+    
     padding: 1px;
-    background-color: gainsboro;
+   
     font-family: Georgia, serif	
 
 }
@@ -34,7 +34,7 @@
 
 .tekstboks_Sundhedsfakta{
     border: 2px solid black;
-    background-color: white;
+    
     padding: 10px;
     font-display: block;
     
