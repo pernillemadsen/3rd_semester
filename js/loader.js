@@ -1,19 +1,32 @@
 var loggedIn = Boolean(false);
 
 $(document).ready(function () {
+<<<<<<< HEAD
     $(".navbar").load("navbar.html");
+=======
+
+    $(".navbar").load("index.html");
+>>>>>>> parent of 9099a74... Merge branch 'master' of https://github.com/pernillemadsen/3rd_semester
     $(".content_master").load("forside.html");
 
 });
 
 function loadHjem() {
+<<<<<<< HEAD
     $(".navbar").load("navbar.html");
+=======
+    $(".navbar").load("index.html");
+>>>>>>> parent of 9099a74... Merge branch 'master' of https://github.com/pernillemadsen/3rd_semester
     $(".content_master").load("forside.html");
 
 }
 
 function loadMotionsdata() {
+<<<<<<< HEAD
     $(".navbar").load("navbar.html");
+=======
+    $(".navbar").load("index.html");
+>>>>>>> parent of 9099a74... Merge branch 'master' of https://github.com/pernillemadsen/3rd_semester
     
     if(loggedIn){
         $(".content_master").load("motionsdata.html");
@@ -26,18 +39,13 @@ function loadMotionsdata() {
 
 
 function loadSundhedsfakta() {
-    $(".navbar").load("navbar.html");
+    $(".navbar").load("index.html");
     $(".content_master").load("sundhedsfakta.html");
 }
 
 
 function loadOmprojektet() {
-    $(".navbar").load("navbar.html");
+    $(".navbar").load("index.html");
     $(".content_master").load("omProjektet.html");
 
-}
-
-function loadGame () {
-    $(".navbar").load("navbar.html");
-    $(".content_master").load("unitySpil.html");
 }
