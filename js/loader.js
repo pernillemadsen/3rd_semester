@@ -1,10 +1,10 @@
 var loggedIn = Boolean(true);
 
-
 $(document).ready(function () {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
     $(".footer").load("footer.html");
+
 });
 
 function loadHjem() {
