@@ -1,3 +1,5 @@
+var loggedIn = Boolean(true);
+
 $(document).ready(function () {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
@@ -12,7 +14,6 @@ function loadHjem() {
 }
 
 function loadSpil() {
-    var loggedIn = Boolean(false);
     $(".navbar").load("navbar.html");
     
     if (loggedIn) {
