@@ -3,6 +3,7 @@ var loggedIn = Boolean(true);
 $(document).ready(function () {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
+    $(".footer").load("footer.html");
 
 });
 
@@ -13,6 +14,7 @@ $(document).ready(function () {
 function loadHjem() {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
+    $(".footer").load("footer.html");
 }
 
 function loadSpil(){
@@ -25,6 +27,7 @@ function loadSpil(){
     else {
         $(".content_master").load("loginSide.html");
     }
+    $(".footer").load("footer.html");
 }
 
 function loadMotionsdata() {
@@ -37,17 +40,20 @@ function loadMotionsdata() {
     else {
         $(".content_master").load("loginSide.html");
     }
+    $(".footer").load("footer.html");
 }
 
 
 function loadSundhedsfakta() {
     $(".navbar").load("navbar.html");
     $(".content_master").load("sundhedsfakta.html");
+    $(".footer").load("footer.html");
 }
 
 
 function loadOmprojektet() {
     $(".navbar").load("navbar.html");
     $(".content_master").load("omProjektet.html");
+    $(".footer").load("footer.html");
 
 }

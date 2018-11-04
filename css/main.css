@@ -59,7 +59,7 @@ body {
     overflow: auto;
 }
 
-/* farv søg tegn ??*/
+/* farve søg tegn ??*/
 .lnr lnr-magnifier{
     color: #FF7F50;
 }
@@ -142,7 +142,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins", sans-serif;
+    
     color: #222222;
     line-height: 1.5em;
     margin-bottom: 0;
@@ -158,7 +158,7 @@ h6 {
 .h6 {
     margin-bottom: 0;
     margin-top: 0;
-    font-family: "Poppins", sans-serif;
+    
     font-weight: 600;
     color: #222222;
 }
@@ -972,6 +972,7 @@ th {
     left: 0;
     width: 100%;
     z-index: 9;
+    
 }
 
 .default-header .right-bar {
@@ -1109,9 +1110,11 @@ th {
     background: #ADD8E6;
     width: 600px;
     border: none;
-    color: white;
+    color: black;
     padding: 0 70px 0 25px;
     font-weight: 400;
+
+
 }
 
 @media (max-width: 991px) {
@@ -1782,3 +1785,216 @@ footer .footer-nav li a:hover {
         position: relative;
     }
 }
+
+/*FOOTER START*/
+
+.container-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #FF7F50;
+    color: white;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}
+
+.footer-project-name {
+    color:black;
+}
+
+.footer-text {
+    margin: 1%
+}
+
+.footer-copyright {}
+
+
+/*FOOTER END*/
+
+/*FORSIDE START*/
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.overskrift {
+    padding-left: 40%;
+    padding-right: 40%;
+    height: 10%;
+    
+    
+}
+
+.overskrift h1 {
+    text-align: center;
+    
+    
+}
+
+.menu_bar {
+    background-color: white;
+    height: 15%;
+}
+
+.frontpage_header {
+    background-color: white;
+    height: 15%;
+}
+
+.frontpage_header h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.frontpage_text {
+    background-color: white;
+    height: 35%;
+    width: 48%;
+    padding-left: 2%;
+    float: left; 
+    overflow: hidden;
+}
+
+.frontpage_video1 {
+    background-color: white;
+    height: 35%;
+}
+
+.frontpage_eggs {
+    background-color: white;
+    height: 35%;
+    width: 48%;
+    padding-left: 2%;
+    float: left;
+    overflow: hidden;
+}
+
+.frontpage_video2 {
+    background-color: white;
+    height: 35%;
+}
+/*FORSIDE SLUT*/
+
+/*Om Project*/
+
+#titel_aboutProject {
+    text-align: left;
+    margin: 5% 0 3% 35%;
+}
+.aboutProjectBody {
+    padding-left: 15%;
+}
+.column_aboutProject {
+    float: left;
+    width: 40%;
+    padding: 0 0 0 10%;
+}
+
+.column2_aboutProject {
+    float: right;
+    width: 40%;
+}
+
+#billede1_aboutProject {
+    margin-bottom: 3%;
+}
+
+
+/*SPIL SIDE */
+
+.spil{
+    background-color: #ADD8E6;
+}
+
+#titel_unitySpil {
+    text-align: center;
+    margin: 5% 0 3% 0;
+}
+
+#UnityEmbed {
+    margin: 0 25% 0 25%;
+}
+
+/*Login i navbar*/
+.login input[type="submit"]:hover {
+    cursor: pointer;
+   
+}
+
+/*#username {
+    background-color: #ADD8E6;
+    color: black;
+} 
+
+#password {
+    background-color: #ADD8E6; 
+    color: black;
+}*/
+
+
+
+/*sundhedsfakta start*/
+
+* {
+    box-sizing: border-box;
+    
+}
+
+.Sundhedsfakta_div {
+    max-width: 70%;
+    margin: auto;
+    
+    padding: 1px;
+   
+    font-family: Georgia, serif	
+
+}
+
+
+
+.column_SundhedsFakta1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 750px; 
+}
+.column_SundhedsFakta2 {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    height: 750px; 
+    
+    
+}
+
+
+.tekstboks_Sundhedsfakta{
+    border: 2px solid black;
+    
+    padding: 10px;
+    font-display: block;
+    
+    
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column_SundhedsFakta1 {
+        width: 100%;
+    }
+    .column_SundhedsFakta2 {
+        width: 100%;
+    }
+}
+/*sundhedsfakta slut*/
+
+
