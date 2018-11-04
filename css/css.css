@@ -33,3 +33,8 @@
 #UnityEmbed {
     margin: 0 25% 0 25%;
 }
+
+/*Login i navbar*/
+.login input[type="submit"]:hover {
+    cursor: pointer;
+}
