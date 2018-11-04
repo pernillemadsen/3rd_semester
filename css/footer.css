@@ -1,0 +1,24 @@
+/*FOOTER START*/
+
+.container-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}
+
+.footer-project-name {}
+
+.footer-text {
+    margin: 1%
+}
+
+.footer-copyright {}
+
+
+/*FOOTER END*/
