@@ -1,5 +1,3 @@
-var loggedIn = Boolean(true);
-
 $(document).ready(function () {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
@@ -7,24 +5,21 @@ $(document).ready(function () {
 
 });
 
-/*function loggedIn() {
-    loggedIn = Boolean(true);
-}*/
-
 function loadHjem() {
     $(".navbar").load("navbar.html");
     $(".content_master").load("forside.html");
     $(".footer").load("footer.html");
 }
 
-function loadSpil(){
+function loadSpil() {
+    var loggedIn = Boolean(false);
     $(".navbar").load("navbar.html");
     
-    if(loggedIn){
+    if (loggedIn) {
         $(".content_master").load("unitySpil.html");
     }
-    
-    else {
+
+     else {
         $(".content_master").load("loginSide.html");
     }
     $(".footer").load("footer.html");
@@ -32,12 +27,10 @@ function loadSpil(){
 
 function loadMotionsdata() {
     $(".navbar").load("navbar.html");
-    
-    if(loggedIn){
+
+    if (loggedIn) {
         $(".content_master").load("motionsdata.html");
-    }
-    
-    else {
+    } else {
         $(".content_master").load("loginSide.html");
     }
     $(".footer").load("footer.html");
