@@ -19,13 +19,6 @@
 }
 
 #billede1_aboutProject {
-    margin-top: 8%;
-    margin-bottom: 3%;
-}
-
-#billede3_aboutProject {
-    
-    margin-top: 2%;
     margin-bottom: 3%;
 }
 
@@ -39,4 +32,9 @@
 
 #UnityEmbed {
     margin: 0 25% 0 25%;
+}
+
+/*Login i navbar*/
+.login input[type="submit"]:hover {
+    cursor: pointer;
 }

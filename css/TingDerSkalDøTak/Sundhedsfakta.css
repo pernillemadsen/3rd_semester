@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+
+.Sundhedsfakta_div {
+    max-width: 70%;
+    margin: auto;
+    
+    padding: 1px;
+   
+    font-family: Georgia, serif	
+
+}
+
+
+
+.column_SundhedsFakta1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 750px; 
+}
+.column_SundhedsFakta2 {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    height: 750px; 
+    
+    
+}
+
+
+.tekstboks_Sundhedsfakta{
+    border: 2px solid black;
+    
+    padding: 10px;
+    font-display: block;
+    
+    
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column_SundhedsFakta1 {
+        width: 100%;
+    }
+    .column_SundhedsFakta2 {
+        width: 100%;
+    }
+}
