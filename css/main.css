@@ -18,33 +18,33 @@
 
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #cccccc;
+    color: black;
     font-weight: 300;
 }
 
 :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #cccccc;
+    color: black;
     opacity: 1;
     font-weight: 300;
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #cccccc;
+    color: black;
     opacity: 1;
     font-weight: 300;
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #cccccc;
+    color: black;
     font-weight: 300;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #cccccc;
+    color: black;
     font-weight: 300;
 }
 
@@ -1075,7 +1075,7 @@ th {
 }
 
 .search span {
-    color: #fff;
+    color: #;
     color: black;
 }
 
@@ -1098,7 +1098,7 @@ th {
     position: absolute;
     top: -13px;
     right: -2px;
-
+    color: black;
 }
 
 .search-field:hover {
