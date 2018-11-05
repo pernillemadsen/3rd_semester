@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 var loggedIn = Boolean(true);
+<<<<<<< HEAD
 =======
 var loggedIn = Boolean(false);
 >>>>>>> master
+=======
+>>>>>>> parent of 03c5e91... Login
 
 $(document).ready(function () {
 <<<<<<< HEAD
@@ -15,8 +18,11 @@ $(document).ready(function () {
     $(".content_master").load("forside.html");
 <<<<<<< HEAD
     $(".footer").load("footer.html");
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> parent of 03c5e91... Login
 
 });
 
