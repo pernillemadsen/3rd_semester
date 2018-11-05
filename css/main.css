@@ -3,15 +3,21 @@
 
 /*--------------------------- Color variations ----------------------*/
 
+
 /* Medium Layout: 1280px */
+
 
 /* Tablet Layout: 768px */
 
+
 /* Mobile Layout: 320px */
+
 
 /* Wide Mobile Layout: 480px */
 
+
 /* =================================== */
+
 
 /*  Basic Style 
 /* =================================== */
@@ -50,7 +56,7 @@
 
 body {
     color: #777777;
-    background-color: rgba(255, 228, 181, 0.05); 
+    background-color: rgba(255, 228, 181, 0.05);
     font-family: "Quicksand", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -59,8 +65,10 @@ body {
     overflow: auto;
 }
 
+
 /* farve søg tegn ??*/
-.lnr lnr-magnifier{
+
+.lnr lnr-magnifier {
     color: #FF7F50;
 }
 
@@ -118,6 +126,7 @@ a:hover {
     padding: 60px;
 }
 
+
 /**
  *  Typography
  *
@@ -142,7 +151,6 @@ h3,
 h4,
 h5,
 h6 {
-    
     color: #222222;
     line-height: 1.5em;
     margin-bottom: 0;
@@ -158,7 +166,6 @@ h6 {
 .h6 {
     margin-bottom: 0;
     margin-top: 0;
-    
     font-weight: 600;
     color: #222222;
 }
@@ -896,9 +903,12 @@ th {
     transition: all 0.3s ease 0s;
 }
 
+
 /************************/
 
+
 /* structure de la page */
+
 
 /************************/
 
@@ -972,7 +982,6 @@ th {
     left: 0;
     width: 100%;
     z-index: 9;
-    
 }
 
 .default-header .right-bar {
@@ -991,14 +1000,12 @@ th {
     -moz-align-items: center;
     align-items: center;
     color: black;
-
 }
 
 @media (max-width: 767px) {
     .default-header nav .main-menu {
         display: none;
         color: black;
-
     }
 }
 
@@ -1014,7 +1021,6 @@ th {
 @media (max-width: 991px) {
     .default-header nav .main-menu a {
         margin: 0 5px;
-
     }
 }
 
@@ -1044,7 +1050,6 @@ th {
     }
     .default-header .main-menu a {
         margin: 5px 20px !important;
-
     }
     .default-header .mobile-btn {
         display: block !important;
@@ -1113,8 +1118,6 @@ th {
     color: black;
     padding: 0 70px 0 25px;
     font-weight: 400;
-
-
 }
 
 @media (max-width: 991px) {
@@ -1731,10 +1734,10 @@ footer .footer-nav li a:hover {
     color: black;
 }
 
+
 /* CUSTOM CSS */
 
 .index-box {
-
     position: absolute;
     display: table-row-group;
     border-style: dashed;
@@ -1748,7 +1751,7 @@ footer .footer-nav li a:hover {
     }
 }
 
-.index-img.video iframe{
+.index-img.video iframe {
     position: absolute;
     border-style: dashed;
     border-color: black;
@@ -1767,9 +1770,7 @@ footer .footer-nav li a:hover {
     }
 }
 
-.video iframe {
-
-}
+.video iframe {}
 
 @media (max-width: 767px) {
     .video iframe {
@@ -1777,14 +1778,15 @@ footer .footer-nav li a:hover {
     }
 }
 
+
 /* Lazy fix */
 
 @media (min-width: 767px) {
-
     #egg {
         position: relative;
     }
 }
+
 
 /*FOOTER START*/
 
@@ -1801,7 +1803,7 @@ footer .footer-nav li a:hover {
 }
 
 .footer-project-name {
-    color:black;
+    color: black;
 }
 
 .footer-text {
@@ -1813,23 +1815,22 @@ footer .footer-nav li a:hover {
 
 /*FOOTER END*/
 
+
 /*FORSIDE START*/
+
 body {
     padding-left: 5%;
     padding-right: 5%;
 }
+
 .overskrift {
     padding-left: 40%;
     padding-right: 40%;
     height: 10%;
-    
-    
 }
 
 .overskrift h1 {
     text-align: center;
-    
-    
 }
 
 .menu_bar {
@@ -1852,7 +1853,7 @@ body {
     height: 35%;
     width: 48%;
     padding-left: 2%;
-    float: left; 
+    float: left;
     overflow: hidden;
 }
 
@@ -1874,7 +1875,10 @@ body {
     background-color: white;
     height: 35%;
 }
+
+
 /*FORSIDE SLUT*/
+
 
 /*Om Project*/
 
@@ -1882,9 +1886,11 @@ body {
     text-align: left;
     margin: 5% 0 3% 35%;
 }
+
 .aboutProjectBody {
     padding-left: 15%;
 }
+
 .column_aboutProject {
     float: left;
     width: 40%;
@@ -1903,7 +1909,7 @@ body {
 
 /*SPIL SIDE */
 
-.spil{
+.spil {
     background-color: #ADD8E6;
 }
 
@@ -1916,11 +1922,13 @@ body {
     margin: 0 25% 0 25%;
 }
 
+
 /*Login i navbar*/
+
 .login input[type="submit"]:hover {
     cursor: pointer;
-   
 }
+
 
 /*#username {
     background-color: #ADD8E6;
@@ -1933,60 +1941,51 @@ body {
 }*/
 
 
-
 /*sundhedsfakta start*/
 
 * {
     box-sizing: border-box;
-    
 }
 
 .Sundhedsfakta_div {
     max-width: 70%;
     margin: auto;
-    
     padding: 1px;
-   
-    font-family: Georgia, serif	
-
+    font-family: Georgia, serif
 }
-
-
 
 .column_SundhedsFakta1 {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 750px; 
+    height: 750px;
 }
+
 .column_SundhedsFakta2 {
     float: left;
     width: 50%;
     padding-top: 50px;
-    height: 750px; 
-    
-    
+    height: 750px;
 }
 
-
-.tekstboks_Sundhedsfakta{
+.tekstboks_Sundhedsfakta {
     border: 2px solid black;
-    
     padding: 10px;
     font-display: block;
-    
-    
-    
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .column_SundhedsFakta1 {
         width: 100%;
@@ -1995,6 +1994,6 @@ body {
         width: 100%;
     }
 }
+
+
 /*sundhedsfakta slut*/
-
-
