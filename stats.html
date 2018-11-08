@@ -1,3 +1,15 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(!isset($_SESSION["loggedin"])){
+  header("location: index.php");
+  exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -27,24 +39,21 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="motionsdata.js"></script>
-    <script src="dynatable/vendor/jquery-1.7.2.min.js"></script>
-    <script src="dynatable/jquery.dynatable.js"></script>
-    <script src="dynatable/jquery.dynatable.css"></script>
     <!--==============================TABLE CSS======================================================-->
     <link rel="icon" type="image/png" href="/images/icons/favicon.ico" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="table-data/vendor/bootstrap/css/bootstrap-grid.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="table-data/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="table-data/vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="table-data/vendor/select2/select2.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="table-data/vendor/perfect-scrollbar/perfect-scrollbar.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/css/util.css">
-    <link rel="stylesheet" type="text/css" href="../3rd_semester/table-data/css/main.css">
+    <link rel="stylesheet" type="text/css" href="table-data/css/util.css">
+    <link rel="stylesheet" type="text/css" href="table-data/css/main.css">
     <!--===============================================================================================-->
 </head>
 
@@ -63,19 +72,16 @@
                                 <li>
                                     <a href="#top" id="menu_home">Hjem</a>
                                 </li>
-                                <a href="#">Motionsfakta</a>
-                                <a href="#">Sundhedsfakta</a>
-                                <a href="#">Om projektet</a>
+                                    <a href="game.html">Dit Virtuelle Kæledyr</a>
+                                    <a href="stats.html">Motionsfakta</a>
+                                    <a href="facts.html">Sundhedsfakta</a>
+                                    <a href="about.html">Om projektet</a>
                             </ul>
                             <!-- Menu Span (Mobile) container-->
                             <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                         </nav>
                         <div class="search relative">
-                            <span class="lnr lnr-magnifier"></span>
-                            <form action="#" class="search-field">
-                                <input type="text" placeholder="Søg her" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Søg her'">
-                                <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
-                            </form>
+                            <?php echo htmlspecialchars($_SESSION["username"]); ?>
                         </div>
                         <!-- SOCIAL MEDIER DEACTIVATED UNTIL FURTHER NOTICE
                         <div class="header-social d-flex align-items-center">
@@ -143,31 +149,7 @@
     </footer>
 
 
-    <script>
-        $(document).ready(function() {
-            $('#my-table').dynatable();
-        });
 
-
-
-        /* REPLACED BY DYNATABLE
-        var t = '';
-        t += '<table>';
-        for (i = 0; i < myObj.length; i++) {
-
-
-            t += '<tr>';
-            t += '<td>' + myObj[i].Date + '</td>' + '<td>' +
-                myObj[i].Steps + '</td>';
-            t += '</tr>';
-
-        }
-        console.log(t);
-        t += '</table>';
-        document.getElementById('motionsdata').innerHTML += t;
-        */
-
-    </script>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -179,14 +161,14 @@
     <script src="js/modules.js"></script>
 
     <!--===============================TABLE JS==============================================-->
-    <script src="../3rd_semester/table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../3rd_semester/table-data/vendor/bootstrap/js/popper.js"></script>
-    <script src="../3rd_semester/table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="table-data/vendor/bootstrap/js/popper.js"></script>
+    <script src="table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../3rd_semester/table-data/vendor/select2/select2.min.js"></script>
+    <script src="table-data/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../3rd_semester/table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script>
         $('.js-pscroll').each(function() {
             var ps = new PerfectScrollbar(this);
@@ -198,7 +180,7 @@
 
     </script>
     <!--===============================================================================================-->
-    <script src="../3rd_semester/table-data/js/main.js"></script>
+    <script src="table-data/js/main.js"></script>
 </body>
 
 </html>
