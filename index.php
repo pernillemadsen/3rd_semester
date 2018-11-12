@@ -263,7 +263,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <h2 class="text-uppercase">DIT VIRTUELLE KÆLEDYR</h2>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <p>Tryk på låsen oppe i højre hjørne for at logge ind</p>
                                 </div>
                                 <div class="col-md-4">
                                 </div>
