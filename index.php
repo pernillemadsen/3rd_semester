@@ -237,7 +237,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                         <a href="#top" id="menu_home">Hjem</a>
                                     </li>
                                     <a href="game.html">Dit Virtuelle Kæledyr</a>
-                                    <a href="stats.html">Motionsfakta</a>
+                                    <a href="stats.html">Motionsdata</a>
                                     <a href="facts.html">Sundhedsfakta</a>
                                     <a href="about.html">Om projektet</a>
                                     

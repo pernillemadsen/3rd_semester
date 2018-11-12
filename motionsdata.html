@@ -38,8 +38,10 @@ if(!isset($_SESSION["loggedin"])){
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main1.css">
+        <link rel="stylesheet" type="text/css" href="table-data/css/util.css">
+        <link rel="stylesheet" type="text/css" href="table-data/css/main.css">
     </head>
 
     <body>
@@ -54,10 +56,10 @@ if(!isset($_SESSION["loggedin"])){
                             <nav class="d-flex align-items-center">
                                 <ul class="main-menu">
                                     <li>
-                                        <a href="forside.html" id="menu_home">Hjem</a>
+                                        <a href="index.html" id="menu_home">Hjem</a>
                                     </li>
                                     <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
-                                    <a href="motionsdata.html">Motionsfakta</a>
+                                    <a href="motionsdata.html">Motionsdata</a>
                                     <a href="sundhedsfakta.html">Sundhedsfakta</a>
                                     <a href="omprojekt.html">Om projektet</a>
 
@@ -65,7 +67,7 @@ if(!isset($_SESSION["loggedin"])){
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
-                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-magnifier"></a>
+                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
                             <div class="search relative">
                                 <?php echo htmlspecialchars($_SESSION["username"]); ?>
@@ -77,18 +79,49 @@ if(!isset($_SESSION["loggedin"])){
         </header>
         <!-- End Header Area -->
         <section class="banner-area relative">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row fullscreen justify-content-center align-items-center">
-                <div class="col-lg-8">
+            <!-- MAIN CONTENT CONTAINER -->
+            <div class="container">
+                <div class="row fullscreen justify-content-center align-items-center">
                     <div id="banner_content" class="banner-content text-center">
-                        <h1>Motionsdata</h1>
+                        <!-- TABLE CONTAINER -->
+                        <div class="col-lg-12"></div>
+                        <div class="limiter">
+                            <div class="container-table100">
+                                <div class="wrap-table100">
+                                    <div class="section-title text-center">
+                                        <h1>Motionsdata</h1>
+                                        <h3>Her kan du se de antal af <b>skridt</b> du har gået det sidste stykke tid</h3>
+                                    </div>
+                                    <div class="table100 ver1 m-b-110">
+                                        <div class="table100-head">
+                                            <table>
+                                                <thead>
+                                                    <tr class="row100 head">
+                                                        <th class="cell100 column1">Dato</th>
+                                                        <th class="cell100 column2">Skridt</th>
+
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+
+                                        <div class="table100-body js-pscroll">
+                                            <table>
+                                                <tbody>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-    </section>
-        
+        </section>
+
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="loginmodal-container">
@@ -106,25 +139,44 @@ if(!isset($_SESSION["loggedin"])){
             </div>
         </div>
 
-    <script>
-        $(document).ready(function() {
-            $('#my-table').dynatable();
-        });
-        </script>
-        
-        <!-- FOOTER -->
-    <footer>
-        <div class="container-footer">
-            <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
-            <div class="footer-text">
-                <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
-                <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
-            </div>
-        </div>
-    
+        <script>
+            $(document).ready(function() {
+                $('#my-table').dynatable();
+            });
 
-    </footer>
-    <!-- FOOTER END -->
+        </script>
+
+        <script src="table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="table-data/vendor/bootstrap/js/popper.js"></script>
+        <script src="table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="table-data/vendor/select2/select2.min.js"></script>
+        <script src="table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script>
+            $('.js-pscroll').each(function() {
+                var ps = new PerfectScrollbar(this);
+
+                $(window).on('resize', function() {
+                    ps.update();
+                })
+            });
+
+        </script>
+
+        <script src="table-data/js/main.js"></script>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container-footer">
+                <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
+                <div class="footer-text">
+                    <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
+                    <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- FOOTER END -->
 
 
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
