@@ -76,6 +76,10 @@ $(document).ready(function(){
              }
         }
     })
+    
+    /*ADD TEXT TO EGGMODAL*/
+    
+    /*EGGMODAL DONE*/
      // -------   Mail Send ajax
 
      $(document).ready(function() {

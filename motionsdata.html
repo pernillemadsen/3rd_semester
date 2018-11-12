@@ -65,6 +65,8 @@ if(!isset($_SESSION["loggedin"])){
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
+                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-magnifier"></a>
+
                             <div class="search relative">
                                 <?php echo htmlspecialchars($_SESSION["username"]); ?>
                             </div>
@@ -86,6 +88,23 @@ if(!isset($_SESSION["loggedin"])){
             </div>
         </div>
     </section>
+        
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Login to Your Account</h1><br>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <input type="text" name="username" placeholder="Brugernavn">
+                        <input type="password" name="password" placeholder="Kodeord">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+
+                    <div class="login-help">
+                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         $(document).ready(function() {
@@ -99,7 +118,7 @@ if(!isset($_SESSION["loggedin"])){
             <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
             <div class="footer-text">
                 <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
-                <p>E-mail: Optek17@gmail.com</p>
+                <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
             </div>
         </div>
     
