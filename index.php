@@ -246,7 +246,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
-                                <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-magnifier"></a>
+                                <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
                         </div>
                     </div>
