@@ -114,6 +114,12 @@ a:hover {
     outline: 0;
     color: #777777;
 }
+a:hover{
+    color: #FF7F50;
+}
+
+
+
 
 .smooth {
     width: 161px;
@@ -1050,7 +1056,7 @@ body {
 }
 
 .details-btn:hover span {
-    color: #fff;
+    color: black;
     font-weight: 600;
 }
 
@@ -1060,6 +1066,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 9;
+    background-color: #ADD8E6;
 }
 
 .default-header .right-bar {
@@ -1140,6 +1147,7 @@ body {
 
 .sticky-header {
     padding: 15px 0;
+    background-color: rgba(173, 216, 230, 0.5);
 }
 
 .is-sticky .sticky-header {
@@ -1792,6 +1800,10 @@ body {
     border-style: dashed;
     border-color: black;
     border-width: thin;
+    
+}
+.index-box a {
+    text-decoration: underline;
 }
 
 @media (max-width: 767px) {

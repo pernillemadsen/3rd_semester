@@ -3,16 +3,8 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-
-@font-face {
-  font-family: Lato-Regular;
-  src: url('../fonts/Lato/Lato-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Lato-Bold;
-  src: url('../fonts/Lato/Lato-Bold.ttf'); 
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -24,7 +16,7 @@
 
 body, html {
 	height: 100%;
-	font-family: sans-serif;
+	 font-family: "Quicksand", sans-serif;
 }
 
 /* ------------------------------------ */
@@ -105,7 +97,7 @@ iframe {
   display: block;
   position: absolute;
   background-color: #ebebeb;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   width: 100%;
   height: calc(100% - 30px);
   left: 0;
@@ -124,7 +116,7 @@ iframe {
   display: block;
   position: absolute;
   background-color: #cccccc;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   width: 100%;
   height: calc(100% - 30px);
   left: 0;
@@ -230,29 +222,29 @@ th, td {
 [ Ver1 ]*/
 
 .table100.ver1 th {
-  font-family: Lato-Bold;
+   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #fff;
   line-height: 1.4;
 
-  background-color: #000000;
+  background-color: #FF7F50;;
 }
 
 .table100.ver1 td {
-  font-family: Lato-Regular;
+  font-family: "Quicksand", sans-serif;;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
 }
 
 .table100.ver1 .table100-body tr:nth-child(even) {
-  background-color: #f8f6ff;
+  background-color: rgba(173, 216, 230, 0.5);
 }
 
 /*---------------------------------------------*/
 
 .table100.ver1 {
-  border-radius: 10px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -286,7 +278,7 @@ th, td {
 }
 
 .table100.ver2 th {
-  font-family: Lato-Bold;
+   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #fa4251;
   line-height: 1.4;
@@ -295,7 +287,7 @@ th, td {
 }
 
 .table100.ver2 td {
-  font-family: Lato-Regular;
+   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -308,7 +300,7 @@ th, td {
 /*---------------------------------------------*/
 
 .table100.ver2 {
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -337,7 +329,7 @@ th, td {
 }
 
 .table100.ver3 th {
-  font-family: Lato-Bold;
+   font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #00ad5f;
   line-height: 1.4;
@@ -346,7 +338,7 @@ th, td {
 }
 
 .table100.ver3 td {
-  font-family: Lato-Regular;
+   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -357,7 +349,7 @@ th, td {
 /*---------------------------------------------*/
 
 .table100.ver3 {
-  border-radius: 10px;
+/*  border-radius: 10px;*/
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -390,7 +382,7 @@ th, td {
 }
 
 .table100.ver4 th {
-  font-family: Lato-Bold;
+   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #4272d7;
   line-height: 1.4;
@@ -404,7 +396,7 @@ th, td {
 }
 
 .table100.ver4 td {
-  font-family: Lato-Regular;
+   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -448,7 +440,7 @@ th, td {
 }
 
 .table100.ver5 th {
-  font-family: Lato-Bold;
+   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #555555;
   line-height: 1.4;
@@ -458,7 +450,7 @@ th, td {
 }
 
 .table100.ver5 td {
-  font-family: Lato-Regular;
+   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -469,7 +461,7 @@ th, td {
 .table100.ver5 .table100-body tr {
   overflow: hidden; 
   border-bottom: 10px solid #fff;
-  border-radius: 10px;
+/*  border-radius: 10px;*/
 }
 
 .table100.ver5 .table100-body table { 
