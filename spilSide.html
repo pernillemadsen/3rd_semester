@@ -54,14 +54,12 @@ if(!isset($_SESSION["loggedin"])){
                             <nav class="d-flex align-items-center">
                                 <ul class="main-menu">
                                     <li>
-                                        <a href="#top" id="menu_home">Hjem</a>
+                                        <a href="forside.html" id="menu_home">Hjem</a>
                                     </li>
-                                    <li>
-                                        <a href="game.html">Dit Virtuelle Kæledyr</a>
-                                    </li>
-                                    <a href="stats.html">Motionsfakta</a>
-                                    <a href="facts.html">Sundhedsfakta</a>
-                                    <a href="about.html">Om projektet</a>
+                                    <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
+                                    <a href="motionsdata.html">Motionsfakta</a>
+                                    <a href="sundhedsfakta.html">Sundhedsfakta</a>
+                                    <a href="omprojekt.html">Om projektet</a>
 
 
                                 </ul>
@@ -76,49 +74,18 @@ if(!isset($_SESSION["loggedin"])){
             </div>
         </header>
         <!-- End Header Area -->
-        <section class="section-full">
-        <div class="container">
-                <div class="overskrift section-title">
-                        <h1>Velkommen</h1>
-                    </div>
-            <div class="row fullscreen">
-               
-                    
-                <div class="container justify-content-center d-flex">
-                    <div class="col-lg-6">
-                        <div class="index-box">
-                            <h2 class="h1 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
-                            <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på.</p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="index-box video">
-                            <iframe width="510" height="250" src="https://www.youtube.con/embed/XQu8TTBmGhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="container justify-content-center d-flex">
-                   >
-                    <div class="col-lg-6">
-                        <div class="index-box">
-                            <h2 class="h1 text-uppercase mb-20">Print dit æg og kom i gang</h2>
-                            <img src="" alt="æg">
-                            <img src="" alt="æg">
-                            <img src="" alt="æg">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="index-box video">
-                            <iframe width="510" height="250" src="https://www.youtube.con/embed/XQu8TTBmGhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="section-full">
+    <div class="container">
+        <h1 id="titel_unitySpil">Dit Virtuelle Kæledyr</h1>
+        <div class=spil>
+            
+            <object id="unitySpil" width="800" height="600">
+                <param name="unity3d" value="WebPlayer.unity3d"/>
+                    <embed id="UnityEmbed" src="tbd" width="800" height="600" type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x"/>
+                </object>
         </div>
-    </section>
-        
+    </div>
+</section>
         <!-- FOOTER -->
     <footer>
         <div class="container-footer">
@@ -128,6 +95,7 @@ if(!isset($_SESSION["loggedin"])){
                 <p>E-mail: Optek17@gmail.com</p>
             </div>
         </div>
+    
 
     </footer>
     <!-- FOOTER END -->
