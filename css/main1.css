@@ -683,6 +683,10 @@ th {
     padding-right: 0;
 }
 
+.game-container {
+    margin-top: -50px;
+}
+
 body {
     padding-left: 5%;
     padding-right: 5%;
@@ -1144,6 +1148,8 @@ body {
         right: 0;
     }
 }
+
+
 
 .sticky-header {
     padding: 15px 0;
@@ -1950,9 +1956,9 @@ footer a {
 }
 
 #UnityEmbed {
-    margin: 0 25% 0 25%;
+    display: block;
+    margin: auto;
 }
-
 
 /*SPIL SIDE SLUT*/
 

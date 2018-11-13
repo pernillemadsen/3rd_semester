@@ -60,13 +60,12 @@ if(!isset($_SESSION["loggedin"])){
                                     <a href="motionsdata.html">Motionsdata</a>
                                     <a href="sundhedsfakta.html">Sundhedsfakta</a>
                                     <a href="omprojekt.html">Om projektet</a>
-
+                                    <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
                             
-                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
                             <div class="search relative">
                                 <?php echo htmlspecialchars($_SESSION["username"]); ?>
                             </div>
@@ -77,7 +76,7 @@ if(!isset($_SESSION["loggedin"])){
         </header>
         <!-- End Header Area -->
 <section class="section-full">
-    <div class="container">
+    <div class="game-container">
         <h1 id="titel_unitySpil">Dit Virtuelle Kæledyr</h1>
         <div class=spil>
             
