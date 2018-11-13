@@ -683,10 +683,6 @@ th {
     padding-right: 0;
 }
 
-.game-container {
-    margin-top: -50px;
-}
-
 body {
     padding-left: 5%;
     padding-right: 5%;
@@ -1950,15 +1946,13 @@ footer a {
     background-color: #ADD8E6;
 }
 
-#titel_unitySpil {
-    text-align: center;
-    /*margin: 5% 0 3% 0;*/
-    padding: 15px 0;
-}
-
 #UnityEmbed {
     display: block;
     margin: auto;
+}
+
+.spilTitel {
+    text-align: center;
 }
 
 /*SPIL SIDE SLUT*/

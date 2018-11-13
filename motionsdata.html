@@ -15,179 +15,182 @@ if(!isset($_SESSION["loggedin"])){
     <html lang="zxx" class="no-js">
 
     <head>
-        <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Favicon-->
-        <link rel="shortcut icon" href="img/fav.png">
-        <!-- Author Meta -->
-        <meta name="author" content="CodePixar">
-        <!-- Meta Description -->
-        <meta name="description" content="">
-        <!-- Meta Keyword -->
-        <meta name="keywords" content="">
-        <!-- meta character set -->
-        <meta charset="UTF-8">
-        <!-- Site Title -->
-        <title>PROCTOR</title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>PROCTOR</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
-        <!--
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
 		CSS
 		============================================= -->
-        <link rel="stylesheet" href="css/linearicons.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main1.css">
-        <link rel="stylesheet" type="text/css" href="table-data/css/util.css">
-        <link rel="stylesheet" type="text/css" href="table-data/css/main.css">
-    </head>
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" type="text/css" href="table-data/css/util.css">
+    <link rel="stylesheet" type="text/css" href="table-data/css/main.css">
+</head>
 
-    <body>
-        <!-- Start Header Area -->
-        <header class="default-header">
-            <div class="sticky-header">
-                <div class="container">
-                    <div class="header-content d-flex justify-content-between align-items-center">
-                        <div class="logo">
-                        </div>
-                        <div class="right-bar d-flex align-items-center">
-                            <nav class="d-flex align-items-center">
-                                <ul class="main-menu">
-                                    <li>
-                                        <a href="index.html" id="menu_home">Hjem</a>
-                                    </li>
-                                    <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
-                                    <a href="motionsdata.html">Motionsdata</a>
-                                    <a href="sundhedsfakta.html">Sundhedsfakta</a>
-                                    <a href="omprojekt.html">Om projektet</a>
+<body>
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <div class="sticky-header">
+            <div class="container">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                    </div>
+                    <div class="right-bar d-flex align-items-center">
+                        <nav class="d-flex align-items-center">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="index.html" id="menu_home">Hjem</a>
+                                </li>
+                                <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
+                                <a href="motionsdata.html">Motionsdata</a>
+                                <a href="sundhedsfakta.html">Sundhedsfakta</a>
+                                <a href="omprojekt.html">Om projektet</a>
 
 
-                                </ul>
-                                <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
-                            </nav>
-                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
+                            </ul>
+                            <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+                        </nav>
+                        <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
-                            <div class="search relative">
-                                <?php echo htmlspecialchars($_SESSION["username"]); ?>
-                            </div>
+                        <div class="search relative">
+                            <?php echo htmlspecialchars($_SESSION["username"]); ?>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- End Header Area -->
-        <section class="banner-area relative">
-            <!-- MAIN CONTENT CONTAINER -->
-            <div class="container">
-                <div class="row fullscreen justify-content-center align-items-center">
-                    <div id="banner_content" class="banner-content text-center">
-                        <!-- TABLE CONTAINER -->
-                        <div class="col-lg-12"></div>
-                        <div class="limiter">
-                            <div class="container-table100">
-                                <div class="wrap-table100">
-                                    <div class="section-title text-center">
-                                        <h1>Motionsdata</h1>
-                                        <h3>Her kan du se de antal af <b>skridt</b> du har gået det sidste stykke tid</h3>
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <section class="banner-area relative section-full">
+        <!-- MAIN CONTENT CONTAINER -->
+        <div class="container">
+            <div class="overskrift section-title">
+                    <h1>Motionsdata</h1>
+                </div>
+            <div class="row justify-content-center align-items-center">
+                <div id="banner_content" class="banner-content text-center">
+                    
+                    <!-- TABLE CONTAINER -->
+                    <div class="col-lg-12"></div>
+                    <div class="limiter">
+                        
+                        <div class="container-table100">
+                            <div class="wrap-table100">
+
+                                <div class=" text-center">
+                                    <h3>Her kan du se de antal af <b>skridt</b> du har gået det sidste stykke tid</h3>
+                                </div>
+                                <div class="table100 ver1 m-b-110">
+                                    <div class="table100-head">
+                                        <table>
+                                            <thead>
+                                                <tr class="row100 head">
+                                                    <th class="cell100 column1">Dato</th>
+                                                    <th class="cell100 column2">Skridt</th>
+
+                                                </tr>
+                                            </thead>
+                                        </table>
                                     </div>
-                                    <div class="table100 ver1 m-b-110">
-                                        <div class="table100-head">
-                                            <table>
-                                                <thead>
-                                                    <tr class="row100 head">
-                                                        <th class="cell100 column1">Dato</th>
-                                                        <th class="cell100 column2">Skridt</th>
 
-                                                    </tr>
-                                                </thead>
-                                            </table>
-                                        </div>
+                                    <div class="table100-body js-pscroll">
+                                        <table>
+                                            <tbody>
 
-                                        <div class="table100-body js-pscroll">
-                                            <table>
-                                                <tbody>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog">
-                <div class="loginmodal-container">
-                    <h1>Login to Your Account</h1><br>
-                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                        <input type="text" name="username" placeholder="Brugernavn">
-                        <input type="password" name="password" placeholder="Kodeord">
-                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-                    </form>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                    <input type="text" name="username" placeholder="Brugernavn">
+                    <input type="password" name="password" placeholder="Kodeord">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
 
-                    <div class="login-help">
-                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
-                    </div>
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script>
-            $(document).ready(function() {
-                $('#my-table').dynatable();
-            });
+    <script>
+        $(document).ready(function() {
+            $('#my-table').dynatable();
+        });
+    </script>
 
-        </script>
+    <script src="table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="table-data/vendor/bootstrap/js/popper.js"></script>
+    <script src="table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="table-data/vendor/select2/select2.min.js"></script>
+    <script src="table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+        $('.js-pscroll').each(function() {
+            var ps = new PerfectScrollbar(this);
 
-        <script src="table-data/vendor/jquery/jquery-3.2.1.min.js"></script>
-        <script src="table-data/vendor/bootstrap/js/popper.js"></script>
-        <script src="table-data/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="table-data/vendor/select2/select2.min.js"></script>
-        <script src="table-data/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script>
-            $('.js-pscroll').each(function() {
-                var ps = new PerfectScrollbar(this);
+            $(window).on('resize', function() {
+                ps.update();
+            })
+        });
+    </script>
 
-                $(window).on('resize', function() {
-                    ps.update();
-                })
-            });
+    <script src="table-data/js/main.js"></script>
 
-        </script>
-
-        <script src="table-data/js/main.js"></script>
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="container-footer">
-                <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
-                <div class="footer-text">
-                    <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
-                    <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
-                </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
+            <div class="footer-text">
+                <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
+                <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
             </div>
+        </div>
 
 
-        </footer>
-        <!-- FOOTER END -->
+    </footer>
+    <!-- FOOTER END -->
 
 
-        <script src="js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/mixitup.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/modules.js"></script>
-    </body>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modules.js"></script>
+</body>
 
     </html>
