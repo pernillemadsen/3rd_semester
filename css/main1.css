@@ -1952,7 +1952,8 @@ footer a {
 
 #titel_unitySpil {
     text-align: center;
-    margin: 5% 0 3% 0;
+    /*margin: 5% 0 3% 0;*/
+    padding: 15px 0;
 }
 
 #UnityEmbed {
