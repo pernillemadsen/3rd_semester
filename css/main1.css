@@ -1926,13 +1926,39 @@ footer a {
 
 .column2_aboutProject {
     float: right;
-    width: 40%;
+    width: 60%;
 }
 
 #billede1_aboutProject {
-    margin-bottom: 20%;
+   margin-bottom: 20%;
+   border: 1px solid #FF7F50;
+    
 }
 
+
+#billede2_aboutProject {
+    margin-bottom: 20%;
+    border: 1px solid #FF7F50;
+}
+
+#billede3_aboutProject {
+    border: 1px solid #FF7F50;
+    transition: transform .2s;
+}
+
+
+
+#billede2_aboutProject:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+#billede3_aboutProject:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
 
 /*OM PROJEKT SLUT*/
 
