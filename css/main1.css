@@ -686,8 +686,7 @@ th {
 
 
 .overskrift {
-    padding-left: 40%;
-    padding-right: 40%;
+    margin: auto;
     height: 10%;
 }
 
@@ -2167,24 +2166,19 @@ input[type=password]:hover {
     font-family: 'Quicksand', serif;
 }
 
-.column_SundhedsFakta1 {
+.column_aboutProject {
     float: left;
-    width: 50%;
-    padding: 10px;
-    height: 750px;
+    width: 40%;
+    padding: 0 0 0 10%;
 }
 
-.column_SundhedsFakta2 {
-    float: left;
-    width: 50%;
-    padding-top: 50px;
-    height: 750px;
+.column2_aboutProject {
+    float: right;
+    width: 70%;
 }
 
 .tekstboks_Sundhedsfakta {
-    border: 2px solid #FF7F50;
-    padding: 10px;
-    font-display: block;
+    border: 1px solid #FF7F50;
 }
 
 

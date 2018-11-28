@@ -15,124 +15,130 @@ if(!isset($_SESSION["loggedin"])){
     <html lang="zxx" class="no-js">
 
     <head>
-        <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Favicon-->
-        <link rel="shortcut icon" href="img/fav.png">
-        <!-- Author Meta -->
-        <meta name="author" content="CodePixar">
-        <!-- Meta Description -->
-        <meta name="description" content="">
-        <!-- Meta Keyword -->
-        <meta name="keywords" content="">
-        <!-- meta character set -->
-        <meta charset="UTF-8">
-        <!-- Site Title -->
-        <title>Sundhedsfakta</title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Sundhedsfakta</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
-        <!--
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
 		CSS
 		============================================= -->
-        <link rel="stylesheet" href="css/linearicons.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/bootstrap.css"> 
-        <link rel="stylesheet" href="css/main1.css">
-    </head>
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main1.css">
+</head>
 
-    <body>
-        <!-- Start Header Area -->
-        <header class="default-header">
-            <div class="sticky-header">
-                <div class="container">
-                    <div class="header-content d-flex justify-content-between align-items-center">
-                        <div class="logo">
-                           <a href="index.html"><img src="img/6742aa4d-014f-40ec-8014-94f0f5388b88.png" alt="logo" height="25%" width="25%"></a>
-                        </div>
-                        <div class="right-bar d-flex align-items-center">
-                            <nav class="d-flex align-items-center">
-                                <ul class="main-menu">
-                                    <li>
-                                        <a href="index.html" id="menu_home">Hjem</a>
-                                    </li>
-                                    <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
-                                    <a href="motionsdata.html">Motionsdata</a>
-                                    <a href="sundhedsfakta.html">Sundhedsfakta</a>
-                                    <a href="omprojekt.html">Om projektet</a>
+<body>
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <div class="sticky-header">
+            <div class="container">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/6742aa4d-014f-40ec-8014-94f0f5388b88.png" alt="logo" height="25%" width="25%"></a>
+                    </div>
+                    <div class="right-bar d-flex align-items-center">
+                        <nav class="d-flex align-items-center">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="index.html" id="menu_home">Hjem</a>
+                                </li>
+                                <a href="spilSide.html">Dit Virtuelle Kæledyr</a>
+                                <a href="motionsdata.html">Motionsdata</a>
+                                <a href="sundhedsfakta.html">Sundhedsfakta</a>
+                                <a href="omprojekt.html">Om projektet</a>
 
 
-                                </ul>
-                                <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
-                            </nav>
-                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
+                            </ul>
+                            <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+                        </nav>
+                        <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
-                            <div class="search relative">
-                                <?php echo htmlspecialchars($_SESSION["username"]); ?>
-                            </div>
+                        <div class="search relative">
+                            <?php echo htmlspecialchars($_SESSION["username"]); ?>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- End Header Area -->
-        <section class="section-full">
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <section class="section-full">
         <div class="container">
-            <div class="row fullscreen">
-               
+            <div class="row">
+                <div class="overskrift section-title">
+                    <h1 id="titel_aboutProject">Sundhedsfakta</h1>
+                </div>
                 <div class="container justify-content-center d-flex">
                     <div class="col-lg-6">
-                        <div class="index-box">
+                        <div class=".column_aboutProject">
                             <h2>Til dig som forældre</h2>
-                            
-                    
-                    <h6>Vidste du at Sundhedsstyrelsen anbefaler, at 5-17årige børn skal være fysisk aktive mindst 60 minutter om dagen?</h6>
-                            
-                    <p class="mb-30"> <p>Aktiviteten skal være med moderat til høj intensitet og ligge ud over almindelige kortvarige dagligdagsaktiviteter. Hvis de 60 minutter deles op, skal hver aktivitet vare mindst 10 minutter. </p>
 
-                    <p> Mindst 3 gange om ugen skal der indgå fysisk aktivitet med høj intensitet af mindst 30 minutters varighed for at vedligeholde eller øge konditionen og muskelstyrken. Der skal indgå aktiviteter, som øger knoglestyrken og bidrager til udvikling af sociale færdigheder, selvtillid og glæde. </p>
 
-                    <p>Samtidigt er der en del, der tyder på, at børn, der er regelmæssigt fysisk aktive, har bedre koncentrationsevne og hukommelse og klarer sig bedre fagligt.</p>
-                            
-                            
-                    <a href="https://www.sst.dk/da/sundhed-og-livsstil/fysisk-aktivitet/anbefalinger/5-17-aar" target="_blank">Tryk for læse mere om Sundhedsstyrelsens anbefalinger</a>         
-                            
-          
-                   
+                            <h6>Vidste du at Sundhedsstyrelsen anbefaler, at 5-17årige børn skal være fysisk aktive mindst 60 minutter om dagen?</h6>
+
+                            <p class="mb-30">
+                                <p>
+                                    Du, som forælder, kan være med til at aktivere dine børn og være med til at få dem ud at være aktive.
+                                </p>
+                                <p>
+                                    Aktiviteten skal være med moderat til høj intensitet og kan ligge ud over almindelige kortvarige dagligdagsaktiviteter. Hvis de 60 minutter deles op, skal hver aktivitet vare mindst 10 minutter.
+                                </p>
+
+                                <p> Mindst 3 gange om ugen skal der indgå fysisk aktivitet med høj intensitet af mindst 30 minutters varighed for at vedligeholde eller øge konditionen og muskelstyrken. Der skal indgå aktiviteter, som øger knoglestyrken og bidrager til udvikling af sociale færdigheder, selvtillid og glæde. </p>
+
+                                <p>Samtidigt er der en del, der tyder på, at børn, der er regelmæssigt fysisk aktive, har bedre koncentrationsevne og hukommelse og klarer sig bedre fagligt.</p>
+
+
+                                <a href="https://www.sst.dk/da/sundhed-og-livsstil/fysisk-aktivitet/anbefalinger/5-17-aar" target="_blank">Tryk for læse mere om Sundhedsstyrelsens anbefalinger</a>
+
+
+
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="tekstboks_Sundhedsfakta">
-                        <h3> Hans er dygtig, han har gået 1500 skridt med Willy idag</h3>
-                        <p> Det viser at Hans til dagligt går mere end det gennemsnitlige barn mellem 8-10år og følger dermed Sundstyrelsens anbefalinger </p>
+                        <div class="column2_aboutProject">
+                        <div id="billede1_aboutProject">
+                            <img src="img/DVKtest2.jpg" width="110%" height="110%" >
 
-                        <img src="img/smile.jpg" alt="Smiley face" width="60%" height="60%">
-                   
-                </div>
+                        </div>
                     </div>
-
+                    </div>
                 </div>
-            
-        </div>
+
+            </div>
     </section>
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog">
-                <div class="loginmodal-container">
-                    <h1>Login to Your Account</h1><br>
-                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                        <input type="text" name="username" placeholder="Brugernavn">
-                        <input type="password" name="password" placeholder="Kodeord">
-                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-                    </form>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                    <input type="text" name="username" placeholder="Brugernavn">
+                    <input type="password" name="password" placeholder="Kodeord">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
 
-                    <div class="login-help">
-                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
-                    </div>
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
                 </div>
             </div>
         </div>
-        <!-- FOOTER -->
+    </div>
+    <!-- FOOTER -->
     <footer>
         <div class="container-footer">
             <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
@@ -141,21 +147,21 @@ if(!isset($_SESSION["loggedin"])){
                 <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
             </div>
         </div>
-    
+
 
     </footer>
     <!-- FOOTER END -->
 
 
-        <script src="js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/mixitup.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/modules.js"></script>
-    </body>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modules.js"></script>
+</body>
 
     </html>
