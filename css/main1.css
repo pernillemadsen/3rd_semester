@@ -58,14 +58,13 @@
 /* ALLE SIDER */
 
 body {
-    color: #777777;
     background-color: rgba(255, 228, 181, 0.05);
-    font-family: "Quicksand", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5em;
     position: relative;
     overflow: auto;
+    
 }
 
 
@@ -165,18 +164,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, {
     color: #222222;
     line-height: 1.5em;
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; 
 }
 
 .h1,
 .h2,
 .h3,
+.h4,
 .h4,
 .h5,
 .h6 {
@@ -683,10 +683,7 @@ th {
     padding-right: 0;
 }
 
-body {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 
 .overskrift {
     padding-left: 40%;
@@ -1144,6 +1141,8 @@ body {
         right: 0;
     }
 }
+
+
 
 .sticky-header {
     padding: 15px 0;
@@ -1927,13 +1926,39 @@ footer a {
 
 .column2_aboutProject {
     float: right;
-    width: 40%;
+    width: 60%;
 }
 
 #billede1_aboutProject {
-    margin-bottom: 3%;
+   margin-bottom: 20%;
+   border: 1px solid #FF7F50;
+    
 }
 
+
+#billede2_aboutProject {
+    margin-bottom: 20%;
+    border: 1px solid #FF7F50;
+}
+
+#billede3_aboutProject {
+    border: 1px solid #FF7F50;
+    transition: transform .2s;
+}
+
+
+
+#billede2_aboutProject:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+#billede3_aboutProject:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
 
 /*OM PROJEKT SLUT*/
 
@@ -1944,15 +1969,20 @@ footer a {
     background-color: #ADD8E6;
 }
 
-#titel_unitySpil {
-    text-align: center;
-    margin: 5% 0 3% 0;
+
+.section-full1 {
+    padding-top: 150px;
+    background-color: #ADD8E6;
 }
 
 #UnityEmbed {
-    margin: 0 25% 0 25%;
+    display: block;
+    margin: auto;
 }
 
+.spilTitel {
+    text-align: center;
+}
 
 /*SPIL SIDE SLUT*/
 
@@ -1968,13 +1998,14 @@ footer a {
     border-radius: 2px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    font-family: roboto;
+    font-family: "Quicksand", sans-serif;
+    
 }
 
 .loginmodal-container h1 {
     text-align: center;
     font-size: 1.8em;
-    font-family: roboto;
+    font-family: "Poppins", sans-serif;
 }
 
 .loginmodal-container input[type=submit] {
@@ -2012,7 +2043,7 @@ input[type=password]:hover {
 .loginmodal {
     text-align: center;
     font-size: 14px;
-    font-family: 'Arial', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 700;
     height: 36px;
     padding: 0 8px;
@@ -2026,9 +2057,9 @@ input[type=password]:hover {
     border: 0px;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    background-color: #4d90fe;
+    background-color: #ADD8E6;
     padding: 17px 0px;
-    font-family: roboto;
+    font-family: "Quicksand", sans-serif;
     font-size: 14px;
     /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
@@ -2037,7 +2068,7 @@ input[type=password]:hover {
     /* border: 1px solid #2f5bb7; */
     border: 0px;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    background-color: #357ae8;
+    background-color: #86c5da;
     /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
@@ -2144,7 +2175,7 @@ input[type=password]:hover {
 }
 
 .tekstboks_Sundhedsfakta {
-    border: 2px solid black;
+    border: 2px solid #FF7F50;
     padding: 10px;
     font-display: block;
 }

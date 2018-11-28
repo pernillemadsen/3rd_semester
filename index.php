@@ -133,13 +133,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 border-radius: 2px;
                 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
                 overflow: hidden;
-                font-family: roboto;
+                font-family: "Quicksand", sans-serif;
             }
 
             .loginmodal-container h1 {
                 text-align: center;
                 font-size: 1.8em;
-                font-family: roboto;
+                font-family: "Quicksand", sans-serif;
             }
 
             .loginmodal-container input[type=submit] {
@@ -177,7 +177,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             .loginmodal {
                 text-align: center;
                 font-size: 14px;
-                font-family: 'Arial', sans-serif;
+                font-family: "Quicksand", sans-serif;
                 font-weight: 700;
                 height: 36px;
                 padding: 0 8px;
@@ -191,9 +191,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 border: 0px;
                 color: #fff;
                 text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-                background-color: #4d90fe;
+                background-color: #ADD8E6;
                 padding: 17px 0px;
-                font-family: roboto;
+                font-family: "Quicksand", sans-serif;
                 font-size: 14px;
                 /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
             }
@@ -202,7 +202,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 /* border: 1px solid #2f5bb7; */
                 border: 0px;
                 text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-                background-color: #357ae8;
+                background-color: #ADD8E6;
                 /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
             }
 
@@ -279,7 +279,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="loginmodal-container">
-                    <h1>Login to Your Account</h1><br>
+                    <h1>Log ind til Dit virtuelle kæledyr</h1><br>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <input type="text" name="username" placeholder="Brugernavn">
                         <input type="password" name="password" placeholder="Kodeord">
@@ -287,7 +287,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     </form>
 
                     <div class="login-help">
-                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                        <a href="#">Register</a> - <a href="#">Glemt login</a>
                     </div>
                 </div>
             </div>
