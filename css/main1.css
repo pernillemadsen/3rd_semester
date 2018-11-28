@@ -1988,10 +1988,15 @@ footer a {
     margin-bottom: 20%;
     width: 960px;
     height: 600px;
+   
 }
 
 .spilTitel {
     text-align: center;
+}
+
+.webgl-content {
+    margin-left: 18%;
 }
 
 
