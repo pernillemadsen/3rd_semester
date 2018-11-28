@@ -39,7 +39,7 @@ if(!isset($_SESSION["loggedin"])){
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main1.css"> 
+        <link rel="stylesheet" href="css/main1.css">
     </head>
 
     <body>
@@ -49,8 +49,8 @@ if(!isset($_SESSION["loggedin"])){
                 <div class="container">
                     <div class="header-content d-flex justify-content-between align-items-center">
                         <div class="logo">
-                             <a href="index.html"><img src="img/6742aa4d-014f-40ec-8014-94f0f5388b88.png" alt="logo" height="25%" width="25%"></a>
-                            
+                            <a href="index.html"><img src="img/6742aa4d-014f-40ec-8014-94f0f5388b88.png" alt="logo" height="25%" width="25%"></a>
+
                         </div>
                         <div class="right-bar d-flex align-items-center">
                             <nav class="d-flex align-items-center">
@@ -68,7 +68,7 @@ if(!isset($_SESSION["loggedin"])){
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
-                            
+
 
                             <div class="search relative">
                                 <?php echo htmlspecialchars($_SESSION["username"]); ?>
@@ -91,19 +91,19 @@ if(!isset($_SESSION["loggedin"])){
                         <div class="col-lg-6">
                             <div class="index-box">
                                 <h2 class="h1 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
-                                <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på. Download her:       </p>
-                            
-                     <a href="https://play.google.com/store/search?q=dit%20virtuelle%20k%C3%A6ledyr" target="_blank"><img src="img/image.png"  style="width:45%; height:30%" ></a> 
-                                
-                                
-                             
-                     <a href="#" target="_blank"><img src="img/app-stare.png"  style="width:45%; height:31%" ></a>            
-                                
-                                
-                                
-                          
-                                
-                               
+                                <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på. Download her: </p>
+
+                                <a href="https://play.google.com/store/search?q=dit%20virtuelle%20k%C3%A6ledyr" target="_blank"><img src="img/image.png" style="width:45%; height:30%"></a>
+
+
+
+                                <a href="#" target="_blank"><img src="img/app-stare.png" style="width:45%; height:31%"></a>
+
+
+
+
+
+
                             </div>
 
                         </div>
@@ -120,7 +120,7 @@ if(!isset($_SESSION["loggedin"])){
                                 <h2 class="h1 text-uppercase mb-20">Scan et æg og kom igang</h2>
                                 <img id="front_img" src="img/1.1.jpg" alt="æg" data-toggle="modal" data-target="#egg-modal1">
                                 <img id="front_img" src="img/2.1.jpg" alt="æg" data-toggle="modal" data-target="#egg-modal2">
-                                <img id="front_img" src="img/3.1.jpg" alt="æg" data-toggle="modal" data-target="#egg-modal3">
+                                <img id="front_img" src="img/3.1.png" alt="æg" data-toggle="modal" data-target="#egg-modal3">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -150,15 +150,17 @@ if(!isset($_SESSION["loggedin"])){
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <div class="modal fade" id="egg-modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="eggModal">
                     <h1>Scan ægget</h1><br>
-                    <p> <center>Scan ægget og kom igang med spillet. Dette er et drageæg.</center> </p> <br>
-                    <img src="img/1.1.jpg"><br>
-                    
+                    <p>
+                        <center>Scan ægget og kom igang med spillet. Dette er et drageæg.</center>
+                    </p> <br>
+                    <img src="img/1.1.png"><br>
+
                 </div>
             </div>
         </div>
@@ -167,9 +169,11 @@ if(!isset($_SESSION["loggedin"])){
             <div class="modal-dialog">
                 <div class="eggModal">
                     <h1>Scan ægget</h1><br>
-                    <p><center>Scan ægget og kom igang med spillet. Dette er et hundeæg.</center> </p> <br>
-                    <img src="img/2.1.jpg">
-                  
+                    <p>
+                        <center>Scan ægget og kom igang med spillet. Dette er et hundeæg.</center>
+                    </p> <br>
+                    <img src="img/2.1.png">
+
                 </div>
             </div>
         </div>
@@ -178,9 +182,11 @@ if(!isset($_SESSION["loggedin"])){
             <div class="modal-dialog">
                 <div class="eggModal">
                     <h1>Scan ægget</h1><br>
-                    <p><center>Scan ægget og kom igang med spillet. Dette er et pingvinæg.</center> </p> <br>
-                    <img src="img/3.1.jpg">
-         
+                    <p>
+                        <center>Scan ægget og kom igang med spillet. Dette er et pingvinæg.</center>
+                    </p> <br>
+                    <img src="img/3.1.png">
+
                 </div>
             </div>
         </div>
@@ -198,17 +204,15 @@ if(!isset($_SESSION["loggedin"])){
         </footer>
         <!-- FOOTER END -->
         <script>
-            
             /*function eggModal() {
-                $("#eggModal").html("<p> Test </p>");
-            }*/
-                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $("#eggModal").html("<p> Test </p>");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }*/
+
             function printImg(file) {
                 var win = window.open('');
-                win.document.write('<img src="img/'+file+'" onload="window.print();window.close()" />');
+                win.document.write('<img src="img/' + file + '" onload="window.print();window.close()" />');
                 win.focus();
             }
-            
 
         </script>
 
