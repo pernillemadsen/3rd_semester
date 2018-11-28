@@ -14,17 +14,11 @@ if(!isset($_SESSION["loggedin"])){
 
     <html lang="zxx" class="no-js">
     <html lang="en-us">
+
     <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | TeamWalk1</title>
-    <link rel="shortcut icon" href="Spillet/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="Spillet/TemplateData/style.css">
-    <script src="Spillet/TemplateData/UnityProgress.js"></script>  
-    <script src="Spillet/Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Spillet/Build/Spillet.json", {onProgress: UnityProgress});
-    </script>    
+
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
@@ -50,6 +44,17 @@ if(!isset($_SESSION["loggedin"])){
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main1.css">
+
+    <link rel="shortcut icon" href="Spillet/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Spillet/TemplateData/style.css">
+    <script src="Spillet/TemplateData/UnityProgress.js"></script>
+    <script src="Spillet/Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Spillet/Build/Spillet.json", {
+            onProgress: UnityProgress
+        });
+    </script>
+
 </head>
 
 <body>
@@ -93,21 +98,10 @@ if(!isset($_SESSION["loggedin"])){
                     <h1>Spillet</h1>
                 </div>
             </div>
-
             <div class=spil>
-
-                <object id="unitySpil" width="800" height="600">
-                <param name="unity3d" value="WebPlayer.unity3d"/>
-                    <embed id="UnityEmbed" src="tbd" width="800" height="600" type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x"/>
-                </object>  
-                <div class="webgl-content" >
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">TeamWalk1</div>
-      </div>
-    </div> 
+                <div class="webgl-content">
+                    <div id="gameContainer"></div>
+                </div>
             </div>
         </div>
     </section>
