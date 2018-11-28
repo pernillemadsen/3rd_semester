@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
      
 
-    // $(function(){
+    /*// $(function(){
     //     $('#Container').mixItUp();
     // });
     var mixer = mixitup('#filter-content');
@@ -55,7 +55,7 @@ $(document).ready(function(){
                     window.location.hash = hash;
                 });
             } 
-        });
+        });*/
 
     $('.active-testimonial-carousel').owlCarousel({
         loop:true,

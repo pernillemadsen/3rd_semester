@@ -1926,19 +1926,20 @@ footer a {
 
 .column2_aboutProject {
     float: right;
-    width: 60%;
+    width: 70%;
 }
 
 #billede1_aboutProject {
-   margin-bottom: 20%;
+   margin-bottom: 10%;
    border: 1px solid #FF7F50;
-    
+    transition: transform .2s;
 }
 
 
 #billede2_aboutProject {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     border: 1px solid #FF7F50;
+    transition: transform .2s;
 }
 
 #billede3_aboutProject {
@@ -1946,7 +1947,11 @@ footer a {
     transition: transform .2s;
 }
 
-
+#billede1_aboutProject:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
 
 #billede2_aboutProject:hover {
     -ms-transform: scale(1.5); 
@@ -1973,11 +1978,13 @@ footer a {
 .section-full1 {
     padding-top: 150px;
     background-color: #ADD8E6;
+    padding-bottom: 10%;
 }
 
 #UnityEmbed {
     display: block;
     margin: auto;
+    
 }
 
 .spilTitel {
@@ -2095,7 +2102,7 @@ input[type=password]:hover {
 .egg-modal1 {
     text-align: center;
     font-size: 14px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     height: 36px;
     padding: 0 8px;
@@ -2157,7 +2164,7 @@ input[type=password]:hover {
     max-width: 70%;
     margin: auto;
     padding: 1px;
-    font-family: Georgia, serif
+    font-family: 'Quicksand', serif;
 }
 
 .column_SundhedsFakta1 {
