@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <html lang="en">
 
     <head>
-        
+
         <meta charset="UTF-8">
         <title>Login - Dit Virtuelle Kæledyr</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
@@ -240,13 +240,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                     <a href="stats.html">Motionsdata</a>
                                     <a href="facts.html">Sundhedsfakta</a>
                                     <a href="about.html">Om projektet</a>
-                                    
+
 
 
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
-                                <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
+                            <a href="#" data-toggle="modal" data-target="#login-modal" class="lnr lnr-lock"></a>
 
                         </div>
                     </div>
@@ -260,14 +260,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="row fullscreen justify-content-center align-items-center">
                     <div class="col-lg-8">
                         <div id="banner_content" class="banner-content text-center">
-                            <h2 class="text-uppercase">DIT VIRTUELLE KÆLEDYR</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                </div>
-                                <div class="col-md-4">
-                                </div>
-                                <div class="col-md-4">
-                                </div>
+                            <div class="index-box">
+                                <a href="#" data-toggle="modal" data-target="#login-modal">
+                                <img src="img/dvkAppLogo.png" style="width: 50%; height: 50%;">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -280,7 +276,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="modal-dialog">
                 <div class="loginmodal-container">
                     <h1>Log ind til Dit virtuelle kæledyr</h1><br>
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
                         <input type="text" name="username" placeholder="Brugernavn">
                         <input type="password" name="password" placeholder="Kodeord">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
