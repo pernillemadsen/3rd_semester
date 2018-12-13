@@ -108,19 +108,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main1.css">
 
         <style type="text/css">
+            
             body {
-                font: 14px sans-serif;
+                font-family: Poppins
             }
-
+            
             .wrapper {
                 width: 350px;
                 padding: 20px;
             }
 
-            @import url(http://fonts.googleapis.com/css?family=Roboto);
+            @import url(https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet);
 
             /****** LOGIN MODAL ******/
 
@@ -233,16 +234,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <div class="right-bar d-flex align-items-center">
                             <nav class="d-flex align-items-center">
                                 <ul class="main-menu">
-                                    <li>
-                                        <a href="#top" id="menu_home">Hjem</a>
-                                    </li>
-                                    <a href="game.html">Dit Virtuelle Kæledyr</a>
-                                    <a href="stats.html">Motionsdata</a>
-                                    <a href="facts.html">Sundhedsfakta</a>
-                                    <a href="about.html">Om projektet</a>
-
-
-
+                                    <div class="login-help">
+                                        <a href="register.php">Opret Bruger</a>
+                                    </div>
                                 </ul>
                                 <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                             </nav>
@@ -277,17 +271,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="loginmodal-container">
                     <h1>Log ind til Dit virtuelle kæledyr</h1><br>
                     <form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
-                        <input type="text" name="username" placeholder="Brugernavn">
-                        <input type="password" name="password" placeholder="Kodeord">
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                            <label class="text-uppercase">Brugernavn</label>
+                            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                            <span class="help-block"><?php echo $username_err; ?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                            <label class="text-uppercase">Kodeord</label>
+                            <input type="password" name="password" class="form-control">
+                            <span class="help-block"><?php echo $password_err; ?></span>
+                        </div>
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-
-                    <div class="login-help">
-                        <a href="#">Register</a> - <a href="#">Glemt login</a>
-                    </div>
                 </div>
             </div>
         </div>
+        
+                <!-- FOOTER -->
+        <footer>
+            <div class="container-footer">
+                <h1 class="footer-project-name">Dit Virtuelle Kæledyr</h1>
+                <div class="footer-text">
+                    <p class="footer-copyright">Copyright &copy; 2018 | All rights reserved. Designed by students of University of Southern Denmark. For educational purposes.</p>
+                    <p>Email: <a href="mailto:optek17@gmail.com.com">optek17@gmail.com</a></p>
+                </div>
+            </div>
+
+        </footer>
+        <!-- FOOTER END -->
 
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

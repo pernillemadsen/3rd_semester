@@ -40,6 +40,13 @@ if(!isset($_SESSION["loggedin"])){
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main1.css">
+        
+        <style>
+            img {
+                cursor: pointer;
+            }
+        </style>
+        
     </head>
 
     <body>
@@ -90,7 +97,7 @@ if(!isset($_SESSION["loggedin"])){
                     <div class="container justify-content-center d-flex">
                         <div class="col-lg-6">
                             <div class="index-box">
-                                <h2 class="h1 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
+                                <h2 class="h2 text-uppercase mb-20">Dit Virtuelle Kæledyr</h2>
                                 <p class="mb-30">Få dit helt eget virtuelle kæledyr. Gå ture, leg og del oplevelser med dit kæledyr via din smartphone. Vælg mellem mange slags forskellige kæledyr som f.eks. hunde, katte og drager. Velkommen til en ny måde at holde kæledyr på. Download her: </p>
 
                                 <a href="https://play.google.com/store/search?q=dit%20virtuelle%20k%C3%A6ledyr" target="_blank"><img src="img/image.png" style="width:45%; height:30%"></a>
@@ -109,7 +116,7 @@ if(!isset($_SESSION["loggedin"])){
                         </div>
                         <div class="col-lg-6">
                             <div class="index-box video">
-                                <iframe width="510" height="250" src="https://www.youtube.con/embed/XQu8TTBmGhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6IICUuJv-uQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
 
@@ -117,7 +124,7 @@ if(!isset($_SESSION["loggedin"])){
                     <div class="container justify-content-center d-flex">
                         <div class="col-lg-6">
                             <div class="index-box">
-                                <h2 class="h1 text-uppercase mb-20">Scan et æg og kom igang</h2>
+                                <h2 class="h2 text-uppercase mb-20">Scan et æg og kom igang</h2>
                                 <img id="front_img" src="img/1.1.jpg" alt="æg" data-toggle="modal" data-target="#egg-modal1">
                                 <img id="front_img" src="img/2.1.jpg" alt="æg" data-toggle="modal" data-target="#egg-modal2">
                                 <img id="front_img" src="img/3.1.png" alt="æg" data-toggle="modal" data-target="#egg-modal3">
@@ -125,7 +132,7 @@ if(!isset($_SESSION["loggedin"])){
                         </div>
                         <div class="col-lg-6">
                             <div class="index-box video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_28SuuyNnFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_28SuuyNnFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -148,9 +155,9 @@ if(!isset($_SESSION["loggedin"])){
         <div class="modal fade" id="egg-modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="eggModal">
-                    <h1>Scan ægget</h1><br>
+                    <center><h2>Scan ægget</h2></center><br>
                     <p>
-                        <center>Scan ægget og kom igang med spillet. Dette er et drageæg.</center>
+                        <center>Scan ægget og kom igang med spillet. Dette er et hundeæg.</center>
                     </p> <br>
                     <img src="img/1.1.png"><br>
 
@@ -161,9 +168,9 @@ if(!isset($_SESSION["loggedin"])){
         <div class="modal fade" id="egg-modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="eggModal">
-                    <h1>Scan ægget</h1><br>
+                    <center><h2>Scan ægget</h2></center><br>
                     <p>
-                        <center>Scan ægget og kom igang med spillet. Dette er et hundeæg.</center>
+                        <center>Scan ægget og kom igang med spillet. Dette er et katteæg.</center>
                     </p> <br>
                     <img src="img/2.1.png">
 
@@ -174,7 +181,7 @@ if(!isset($_SESSION["loggedin"])){
         <div class="modal fade" id="egg-modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;" onclick="eggModal()">
             <div class="modal-dialog">
                 <div class="eggModal">
-                    <h1>Scan ægget</h1><br>
+                    <center><h2>Scan ægget</h2></center><br>
                     <p>
                         <center>Scan ægget og kom igang med spillet. Dette er et pingvinæg.</center>
                     </p> <br>

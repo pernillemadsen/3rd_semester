@@ -1,9 +1,11 @@
 <?php
+
 $conn = mysqli_connect("localhost:3306", "letechde_root", "Warisgood1990!", "letechde_pedometer");
 if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
-$user = "Admin";
+$user = $_POST["username"];
+//$user = "Admin";
 //$steps = "1802960472";
 //$Email = $_POST["Email"];
 //$Password = $_POST["Password"];
